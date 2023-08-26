@@ -127,6 +127,12 @@
                             <span class="text nav-text">Prueba2</span>
                         </a>
                     </li>
+                    <li class="nav-link">
+                		<a href="Login.jsp">
+                    		<i class='bx bx-log-in-circle icon'></i>
+                    		<span class="text nav-text">Login</span>
+                		</a>
+            		</li>
 
                 </ul>
             </div>
