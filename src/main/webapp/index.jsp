@@ -14,7 +14,42 @@
 	rel="stylesheet"
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
-	
+<style>
+.home {
+    background-image: url('img/JBS_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+</style>
+
 
 
 <title>Miniworld-Development</title>
@@ -36,6 +71,11 @@
 
             <i class='bx bx-chevron-right toggle'></i>
         </header>
+<!-- cargar pantalla -->
+	<div class="loading-screen">
+    	<div class="loader"></div>
+	</div>
+<!-- - -->
 
         <div class="menu-bar">
             <div class="menu">
@@ -90,29 +130,9 @@
 
                 </ul>
             </div>
-
-            <div class="bottom-content">
-                <li class="">
-                    <a href="#">
-                        <i class='bx bx-log-out icon' ></i>
-                        <span class="text nav-text">Cerrar Sesión</span>
-                    </a>
-                </li>
-
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Modo oscuro</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
                 
             </div>
-        </div>
+
     </nav>
     <section class="home">
         <div class="text">Jose Buenaventura Sepulveda</div>
@@ -121,6 +141,16 @@
     <script src="script.js"></script>
 				</body>
 
+<script>
+// Wait for the page to fully load
+window.addEventListener('load', function() {
+    // Simulate a delay of 3 seconds
+    setTimeout(function() {
+        // Hide the loading screen
+        document.querySelector('.loading-screen').style.display = 'none';
+    }, 1000); // 1000 milliseconds = 1 seconds
+});
+</script>
 
 	<!-- Bootstrap Bundle with Popper -->
 	<script

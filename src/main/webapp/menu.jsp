@@ -9,11 +9,11 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" href="index.jsp">Inicio</a></li>
-				<li class="nav-item"><a class="nav-link" href="attorney.jsp">Attorney</a></li>
-				<li class="nav-item"><a class="nav-link" href="manager.jsp">Manager</a></li>
-				<li class="nav-item"><a class="nav-link" href="operation.jsp">Operation</a></li>
-				<li class="nav-item"><a class="nav-link" href="attorney2.jsp">Prueba</a></li>				
+				<li class="nav-item"><a class="nav-link animate__animated animate__zoomIn" href="index.jsp">Inicio</a></li>
+				<li class="nav-item"><a class="nav-link animate__animated animate__zoomIn" href="attorney.jsp">Attorney</a></li>
+				<li class="nav-item"><a class="nav-link animate__animated animate__zoomIn" href="manager.jsp">Manager</a></li>
+				<li class="nav-item"><a class="nav-link animate__animated animate__zoomIn" href="operation.jsp">Operation</a></li>
+				<li class="nav-item"><a class="nav-link animate__animated animate__zoomIn" href="attorney2.jsp">Prueba</a></li>				
 			</ul>
 		</div>
 	</div>
